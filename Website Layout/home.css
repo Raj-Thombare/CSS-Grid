@@ -1,0 +1,38 @@
+.content  {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, minmax(150px, auto));
+    max-width: 960px;
+    margin: 0 auto;
+    grid-gap: 5px;
+    text-align: center;
+}
+
+header {
+    background: rgb(235, 115, 115);
+    grid-column: 1 / 6;
+}
+
+main {
+    background: yellowgreen;
+    grid-column: 1 / 4;
+    grid-row: 2 / 5;
+}
+
+nav {
+    background: turquoise;
+    grid-column: 4 / 6;
+    grid-row: 2 / 4;
+}
+
+aside {
+    background: gray;
+    grid-column: 4 / 6;
+    grid-row: 4 / 5;
+}
+
+footer {
+    background: orchid;
+    grid-column: 1 / 6;
+}
+
